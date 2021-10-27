@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+
+body{
+
+  background-color:#1b1703;
+  color:gold;
+  width:50%;
+  height:50%;
+}
+h2{
+  font-size:35px;
+  text-align:center;
+  background: #787345;
+  transition: 1s;
+  border: 1px solid gold;
+  border-radius: 50px;
+    font-family:verdana;
+}
+
+h2::before {
+  margin-right:200px;
+  content: "Halloween";
+  position: absolute;
+  transform: translateX(100%), rotate(180);
+  width: 50%;
+  height: 30%;
+ border-radius: 550px;
+  transition: 1s;
+  z-index: -1;
+}
+
+h2:hover::after {
+  content: "";
+  position: absolute;
+  transform: translateX(0%) translateY(50%);
+  transition: 0.5s;
+  transition-delay: 1s;
+  border-radius: 50px;
+}
+
+
+h2:hover::before {
+  transform: translateX(50%) rotate(90deg) scale(1.2);
+   background-color:#787345;
+   color:black;
+   border: 2px solid black;
+}
+
+
+p{
+    margin-left:30px;
+  padding:20px;
+  text-align:justify;
+  border:5px solid #787345;
+  border-radius:30px;
+  transition: 1s;
+}
+
+button:hover {
+  cursor: pointer;
+}
+.tab{
+    display: none;
+}
+
+img {
+  width:200px;
+  height:150px;
+  border-radius:10px;
+  margin-left:30px;
+}
+
+button {
+    margin-left:30px;
+  padding:0px;
+  font-size:18px;
+  font-family:verdana;
+  width:100px;
+  height:50px;
+  background:gold;
+  border: 5px solid #787345;
+  border-radius:10px;
+  color:#787345;
+  content-align:center;
+}
+button:hover{
+  background-color: #1b1703;
+  color:white;
+}
+
+    </style>
+    <title></title>
+  </head>
+  <body>
+  <h2 id="heading">Helovynas</h2>
+  <div class="tabs">
+    <button onclick="changeTab(event, 'pirmas')">Intro</button>
+    <button onclick="changeTab(event, 'antras')">Istorija</button>
+    <button onclick="changeTab(event, 'trecias')">Maistas</button>
+  </div>
+
+
+
+<div class="tab" id="pirmas">
+  <img src="img3.jpg" alt="Helovynas">
+    <p><strong>Helovinas</strong> (dar užrašoma Helovynas, VLKK taip pat siūlo naudoti pavadinimus Vaiduoklių šventė arba Šiurpnaktis) − šventė, vykstanti spalio 31 d. JAV šios šventės metu vaikai dėvi specialius kostiumus ir vaikšto po žmonių namus, sakydami: „Pokštas arba saldainis“. Daugelis iš moliūgų išsiskaptuoja žibintus. Taip pat pasakojamos baisios istorijos, žiūrimi siaubo filmai, krečiamos šunybės. Pavadinimas Helovinas (angl. Halloween, sutraukta iš All Hallows' Eve 'Visų šventųjų vakaras') kilęs iš senosios anglų kalbos.</p>
+</div>
+
+
+
+<div class="tab" id="antras">
+  <img src="img2.jpg" alt="Helovynas">
+  <p>Veikiausiai šiandien švenčiamo Helovino pagrindinis šaltinis − tai keltiška Sauino šventė. Keltų naujieji metai prasidėdavo lapkričio 1 d. O šventė, kuri prasidėdavo Naujųjų metų išvakarėse, būdavo rengiama keltų mirties viešpaties Samhaino garbei. Ši šventė pažymėdavo šalčio, tamsos ir gedimo sezono pradžią. Natūraliai ją pradėta asocijuoti su žmogaus mirtimi. Keltai tikėjo, kad Samhainas tą vakarą leisdavo mirusiųjų sieloms sugrįžti į savo namus. Samhaino šventės vakare žmonės užgesindavo savo namų židinius. Druidai iš ąžuolo (jiems švento medžio) šakų sukraudavo milžinišką naujųjų metų laužą. Jame jie degindavo paaukotus gyvūnus. Tada kiekviena šeima nuo to laužo vėl užkurdavo savo šeimos židinį. Šventės metu žmonės kartais vilkėdavo specialiais kostiumais, pagamintais iš gyvulių odos ir galvų. Iš paaukotų gyvulių liekanų jie spėdavo ateinančių metų ateitį.</p>
+</div>
+
+
+<div class="tab" id="trecias">
+  <img src="img1.jpg" alt="Helovynas">
+  <p>Helovino metu paplitę karameliniai obuoliai. Tai yra obuoliai ant pagaliukų, išmirkyti karamelėje ar cukraus tirpale.Tradiciškai būdavo įprasta juos duoti po namus vaikščiojantiems kostiumuotiems vaikams, panašiai, kaip Lietuvoje Užgavėnių metu būdavo dalinami blynai. Tačiau šis paprotys sparčiai nyksta, tėvams neišleidžiant vaikų dėl paplitusių mitų apie dalijamus užnuodytus ar smeigtukų prikaišiotus obuolius.[3] Nors apsinuodijimų iš tiesų yra pasitaikę, praktiškai visais tokiais atvejais kalti būdavo patys apsinuodijusių vaikų tėvai.Airijoje iki šių laikų išlikęs paprotys kepti tam tikrą specialų pyragą su razinomis – barmbraką (airiškai Báirín Breac). Prieš kepimą į tešlą įdedama moneta ar žiedas. Pasak papročio, kas ras savo pyrago gabalėlyje tą įdėtą žiedą, per ateinančius metus susiras savo tikrąją meilę.
+Svarbus Helovino maistas, ypač JAV, yra moliūgas. Ir patiekalai iš moliūgo, ir moliūgo sėklos, ir moliūgo formos saldainiai ar kitoks maistas. Dažniausiai atėjusiems persirengusiems vaikams yra dalinami saldainiai.</p>
+</div>
+<script type="text/javascript">
+
+  function changeTab(target, name){
+    var tabs = document.getElementsByClassName("tab");
+    var tab = document.getElementById(name);
+    var buttons = document.getElementsByTagName("button");
+    for (var i = 0; i < tabs.length; i++) {
+      tabs[i].style.display = "none";
+      tab.style.display = "block";
+      buttons[i].classList.remove("active");
+    }
+    target.currentTarget.className = "active";
+  }
+
+  </script>
+  </body>
+</html>
